@@ -7,8 +7,13 @@ inputs:
   debug_keystore:
     description: The f-droid debug keystore
     required: true
+  fdroid_nightly_args:
+    description: Additional args to the fdroid nightly command
+    required: false
 runs:
   using: docker
   image: Dockerfile
+  args:
+    - ${{ inputs.fdroid_nightly_args }}
   env:
     DEBUG_KEYSTORE: ${{ inputs.debug_keystore }}
