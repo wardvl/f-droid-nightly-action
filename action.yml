@@ -1,0 +1,11 @@
+name: F-droid nightly builds
+description: Create and deploy f-droid apps nightly builds
+inputs:
+  debug_keystore:
+    description: The f-droid debug keystore
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  env:
+    DEBUG_KEYSTORE: ${{ inputs.debug_keystore }}
