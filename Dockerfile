@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/fdroid/docker-executable-fdroidserver:master
+FROM registry.gitlab.com/fdroid/docker-executable-fdroidserver:latest
 COPY entrypoint.sh /entrypoint.sh
 #Add CI for github workflow
 COPY nightly.py /fdroidserver/fdroidserver/nightly.py
