@@ -9,4 +9,4 @@ It also adds an option `--no-resign` to the `fdroid nightly` command.
 This can be useful when you include the signing in your own build process.
 Eg. for system apps that rely on being signed with the system key.
 
-For more information on how to setup a nightly repo please check [F-droid docs](https://f-droid.org/en/docs/Publishing_Nightly_Builds/).
+For more information on how to setup a nightly repo please check [F-Droid docs](https://f-droid.org/docs/Publishing_Nightly_Builds/).
