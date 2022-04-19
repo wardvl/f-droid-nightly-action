@@ -3,7 +3,5 @@ COPY entrypoint.sh /entrypoint.sh
 #Add CI for github workflow
 RUN apt-get update \
     && apt-get install ssh -y \
-    && cd /fdroidserver \
-    && python3 setup.py compile_catalog build \
-    && python3 setup.py install
+    && apt-get dist-upgrade -y
 ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
