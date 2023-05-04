@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
-fdroid nightly -v $*
+. /etc/profile.d/bsenv.sh
+${fdroidserver}/fdroid nightly -v $*
